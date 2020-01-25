@@ -15,11 +15,11 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxAddonTemplate
-	ADDON_DESCRIPTION = ofxAddonTemplate is amazing!
-	ADDON_AUTHOR = @yournamehere
-	ADDON_TAGS = "addon" "template"
-	ADDON_URL = http://github.com/yournamehere/ofxAddonTemplate
+	ADDON_NAME = ofxLua
+	ADDON_DESCRIPTION = ofxLua is wrapper of lua
+	ADDON_AUTHOR = @desktopgame
+	ADDON_TAGS = "addon"
+	ADDON_URL = http://github.com/desktopgame/ofxLua
 
 common:
 	# dependencies with other addons, a list of them separated by spaces 
@@ -29,7 +29,7 @@ common:
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
 	# specified here separated by spaces or one per line using +=
-	# ADDON_INCLUDES =
+	ADDON_INCLUDES = libs/lua/packages/lua.5.3.5.1/build/native/include
 	
 	# any special flag that should be passed to the compiler when using this
 	# addon
@@ -91,6 +91,7 @@ vs:
 	# After compiling copy the following dynamic libraries to the executable directory
 	# only windows visual studio
 	# ADDON_DLLS_TO_COPY = 
+	ADDON_LIBS += libs/lua/packages/lua.5.3.5.1/build/native/lib/v140/Win32/Release/lua.lib
 	
 linuxarmv6l:
 linuxarmv7l:
