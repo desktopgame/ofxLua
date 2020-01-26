@@ -1,14 +1,14 @@
 ofxLua
 =====================================
 
-ofxLua is lua wrapper for call lua from openFrameworks.
-already exists same name repository,
+ofxLua is lua wrapper for call lua from openFrameworks.  
+already exists same name repository,  
 however, this repository is differ how to use.
 also, support only windows os
 
 Introduction
 ------------
-ofxLua can write global variable, read global variable, and define function.
+ofxLua can write global variable, read global variable, and define function.  
 bellow code is example source code.
 
 ````
@@ -169,8 +169,8 @@ MIT License
 
 Installation
 ------------
-please this folder placement into `openFrameworks/addons/`
-and later, launch `ofxLua/scripts/init.bat`.
+please this folder placement into `openFrameworks/addons/`  
+and later, launch `ofxLua/scripts/init.bat`.  
 will lua library download by nuget, into `libs/lua/packages`
 
 Dependencies
@@ -179,7 +179,7 @@ have no dependencies.
 
 Compatibility
 ------------
-it checked works only with `of_v0.10.1_vs2017_release`.
+it checked works only with `of_v0.10.1_vs2017_release`.  
 not supported other than windows os.
 
 Known issues
