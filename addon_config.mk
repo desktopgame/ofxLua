@@ -90,8 +90,8 @@ linux64:
 vs:
 	# After compiling copy the following dynamic libraries to the executable directory
 	# only windows visual studio
-	# ADDON_DLLS_TO_COPY = 
-	ADDON_LIBS += libs/lua/packages/lua.5.3.5.1/build/native/lib/v140/Win32/Release/lua.lib
+	ADDON_DLLS_TO_COPY = libs/lua/packages/lua.redist.5.3.5.1/build/native/bin/v141/Win32/Release/lua.dll
+	ADDON_LIBS += libs/lua/packages/lua.5.3.5.1/build/native/lib/v141/Win32/Release/lua.lib
 	
 linuxarmv6l:
 linuxarmv7l:
