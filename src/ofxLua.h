@@ -16,13 +16,13 @@ namespace ofxLua {
  */
 using Type = enum {
 	T_BOOL = 0,
-	T_LIGHT_USERDATA,
-	T_NIL,
-	T_NONE,
+	// T_LIGHT_USERDATA,
+	// T_NIL,
+	// T_NONE,
 	T_NUMBER,
 	T_STRING,
-	T_TABLE,
-	T_THREAD,
+	// T_TABLE,
+	// T_THREAD,
 	T_USERDATA
 };
 /**
