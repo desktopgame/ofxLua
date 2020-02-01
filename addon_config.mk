@@ -100,6 +100,9 @@ android/armeabi-v7a:
 osx:
 	# osx/iOS only, any framework that should be included in the project
 	# ADDON_FRAMEWORKS =
+	ADDON_CPPFLAGS += -std=c++11
+	ADDON_INCLUDES += /usr/local/include/lua
+	ADDON_LIBS += /usr/local/lib/liblua.dylib
 ios:
 tvos:
 
