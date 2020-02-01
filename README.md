@@ -168,9 +168,20 @@ MIT License
 
 ## Installation
 
+### WindowsOS
+
 please this folder placement into `openFrameworks/addons/`  
 and later, launch `ofxLua/scripts/init.bat`.  
 will lua library download by nuget, into `libs/lua/packages`
+
+### macOS
+
+please this folder placement into `openFrameworks/addons/`  
+also need install lua.
+
+```
+brew install lua
+```
 
 ## Dependencies
 

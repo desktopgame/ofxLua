@@ -1,6 +1,6 @@
 # ofxLua
 
-ofxLua は、openFrameworks から LUA を呼び出すための簡単なラッパーです。
+ofxLua は、openFrameworks から LUA を呼び出すための簡単なラッパーです。  
 既に[同名のリポジトリ](https://github.com/danomatika/ofxLua)が存在しますが、こちらは少し使い方が違います。
 
 ## Introduction
@@ -170,9 +170,20 @@ MIT License
 
 ## Installation
 
-このフォルダを`openFrameworks/addons/`に置いてください。
-そのあと、`このアドオン/scripts/init.bat` を実行してください。
+### WindowsOS の場合
+
+このフォルダを`openFrameworks/addons/`に置いてください。  
+そのあと、`このアドオン/scripts/init.bat` を実行してください。  
 これによって nuget から lua が適切な場所にダウンロードされます。
+
+### macOS の場合
+
+このフォルダを`openFrameworks/addons/`に置いてください。  
+また、事前に lua の導入が必要です。
+
+```
+brew install lua
+```
 
 ## Dependencies
 
