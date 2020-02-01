@@ -165,13 +165,12 @@ TResult<std::unordered_map<std::string, Object>, Unit> Interpreter::getAllVariab
 		std::string key = lua_tostring(state, -2);
 		int type = lua_getglobal(state, key.c_str());
 		if (type == LUA_TNUMBER) {
-			ret.insert_or_assign(key,
-				create(lua_tonumber(state, -1)));
+			ret.insert(std::pair<std::string, Object>(key, create(lua_tonumber(state, -1))));
 		} else if (type == LUA_TBOOLEAN) {
-			ret.insert_or_assign(
-				key, create(lua_toboolean(state, -1) == 1));
+			ret.insert(
+				std::pair<std::string, Object>(key, create(lua_toboolean(state, -1) == 1)));
 		} else if (type == LUA_TSTRING) {
-			ret.insert_or_assign(key, create(std::string(lua_tostring(state, -1))));
+			ret.insert(std::pair<std::string, Object>(key, create(std::string(lua_tostring(state, -1)))));
 		}
 		lua_pop(state, 1);
 		lua_pop(state, 1);

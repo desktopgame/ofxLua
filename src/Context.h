@@ -65,7 +65,7 @@ private:
 
 template<typename T>
 inline void Context::set(const std::string & name, T value) {
-	map.insert_or_assign(name, value);
+	map.insert(std::pair<std::string, linb::any>(name, value));
 }
 
 template<typename T>
