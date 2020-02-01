@@ -26,7 +26,7 @@ public:
 	 * @param errorMessage
 	 * @param errorInfo
 	 */
-	explicit TResult(std::string& errorMessage, E errorInfo);
+	explicit TResult(std::string errorMessage, E errorInfo);
 	explicit TResult(const char* errorMessage, E errorInfo);
 
 	/**
@@ -79,7 +79,7 @@ inline TResult<T, E>::TResult(T value) : value(value), errorMessage(), errorInfo
 }
 
 template<typename T, typename E>
-inline TResult<T, E>::TResult(std::string & errorMessage, E errorInfo) : value(), errorMessage(errorMessage), errorInfo(errorInfo), failed(true) {
+inline TResult<T, E>::TResult(std::string  errorMessage, E errorInfo) : value(), errorMessage(errorMessage), errorInfo(errorInfo), failed(true) {
 }
 
 template<typename T, typename E>
@@ -112,7 +112,7 @@ inline std::string TResult<T, E>::getErrorMessage() const {
 }
 template<typename T, typename E>
 inline E TResult<T, E>::getErrorInfo() const {
-	return failed ? : errorInfo : E();
+	return errorInfo;
 }
 }
 #endif
