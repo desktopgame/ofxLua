@@ -1,17 +1,15 @@
-ofxLua
-=====================================
+# ofxLua
 
 ofxLua is lua wrapper for call lua from openFrameworks.  
 already exists same name repository,  
 however, this repository is differ how to use.
-also, support only windows os
 
-Introduction
-------------
+## Introduction
+
 ofxLua can write global variable, read global variable, and define function.  
 bellow code is example source code.
 
-````
+```
 #include "ofApp.h"
 #include "ofxLua.h"
 #include <iostream>
@@ -146,10 +144,11 @@ void ofApp::gotMessage(ofMessage msg) {
 void ofApp::dragEvent(ofDragInfo dragInfo) {
 
 }
-````
+```
 
 output
-````
+
+```
 hello ofxLua!
 Cpp String
 111
@@ -161,35 +160,36 @@ SecondString
 2
 SecondString
 3
-````
+```
 
-License
--------
+## License
+
 MIT License
 
-Installation
-------------
+## Installation
+
 please this folder placement into `openFrameworks/addons/`  
 and later, launch `ofxLua/scripts/init.bat`.  
 will lua library download by nuget, into `libs/lua/packages`
 
-Dependencies
-------------
+## Dependencies
+
 have no dependencies.
 
-Compatibility
-------------
-it checked works only with `of_v0.10.1_vs2017_release`.  
-not supported other than windows os.
+## Compatibility
 
-Known issues
-------------
+it checked works only with `of_v0.10.1_vs2017_release`.  
+supported platform list:
+
+- Windows10
+- macos-mojave
+
+## Known issues
+
 known problem is none.
 
-Version history
-------------
+## Version history
 
 ### Version 0.1 (2020/01/26):
+
 first release.
-
-

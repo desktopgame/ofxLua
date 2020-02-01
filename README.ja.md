@@ -1,17 +1,17 @@
-ofxLua
-=====================================
+# ofxLua
 
-ofxLuaは、openFrameworksからLUAを呼び出すための簡単なラッパーです。 
-既に[同名のリポジトリ](https://github.com/danomatika/ofxLua)が存在しますが、こちらは少し使い方が違うのと、Windowsに**のみ**対応しています。
+ofxLua は、openFrameworks から LUA を呼び出すための簡単なラッパーです。
+既に[同名のリポジトリ](https://github.com/danomatika/ofxLua)が存在しますが、こちらは少し使い方が違います。
 
-Introduction
-------------
-luaの簡単なラッパーです。  
+## Introduction
+
+lua の簡単なラッパーです。  
 C++側からはグローバル変数の設定/読み込みと関数の定義などが出来ます。  
-また、luaがCスタイルの関数ポインタしか受け入れないことによる問題をコンテキストクラスで解決しています。  
-  
+また、lua が C スタイルの関数ポインタしか受け入れないことによる問題をコンテキストクラスで解決しています。
+
 以下は簡単なサンプルです。
-````
+
+```
 #include "ofApp.h"
 #include "ofxLua.h"
 #include <iostream>
@@ -146,10 +146,11 @@ void ofApp::gotMessage(ofMessage msg) {
 void ofApp::dragEvent(ofDragInfo dragInfo) {
 
 }
-````
+```
 
 実行結果
-````
+
+```
 hello ofxLua!
 Cpp String
 111
@@ -161,34 +162,36 @@ SecondString
 2
 SecondString
 3
-````
+```
 
-License
--------
+## License
+
 MIT License
 
-Installation
-------------
+## Installation
+
 このフォルダを`openFrameworks/addons/`に置いてください。
 そのあと、`このアドオン/scripts/init.bat` を実行してください。
-これによってnugetからluaが適切な場所にダウンロードされます。
+これによって nuget から lua が適切な場所にダウンロードされます。
 
-Dependencies
-------------
+## Dependencies
+
 このアドオンを使用するのに必要なほかのアドオンはありません。
 
-Compatibility
-------------
-`of_v0.10.1_vs2017_release`でのみ動作を確認しています。
-また、Windows10以外のOSではチェックしていません。
+## Compatibility
 
-Known issues
-------------
+`of_v0.10.1_vs2017_release`でのみ動作を確認しています。
+サポートされているプラットフォーム
+
+- Windows10
+- macos-mojave
+
+## Known issues
+
 現在のところ、既知の不具合はありません。
 
-Version history
-------------
+## Version history
 
 ### Version 0.1 (2020/01/26):
-最初のリリースです。
 
+最初のリリースです。
